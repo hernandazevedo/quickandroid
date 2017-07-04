@@ -78,6 +78,11 @@ Page {
             name : "TextField",
             description: "TextField",
             demo : "textField/TextFieldDemo.qml"
+        },
+        {
+            name : "PaxPrinter",
+            description: "PaxPrinter",
+            demo : "paxprinter/PaxPrintDemo.qml"
         }
     ];
 

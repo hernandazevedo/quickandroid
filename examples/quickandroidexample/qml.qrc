@@ -33,5 +33,6 @@
         <file>imagePicker/ImagePickerDemo.qml</file>
         <file>bottomsheet/BottomSheetDemo.qml</file>
         <file>button/ButtonDemo.qml</file>
+        <file>paxprinter/PaxPrintDemo.qml</file>
     </qresource>
 </RCC>

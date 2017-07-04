@@ -30,7 +30,8 @@ DISTFILES += \
     android-sources/build.gradle \
     android-sources/gradle/wrapper/gradle-wrapper.properties \
     android-sources/gradlew.bat \
-    android-sources/settings.gradle
+    android-sources/settings.gradle \
+    android-sources/gradle/wrapper/gradle-wrapper.properties
 
 HEADERS += \
     automator.h \
