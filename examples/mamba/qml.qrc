@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>res/drawable-hdpi/icon.png</file>
+        <file>Components.qml</file>
+        <file>res/drawable-xxhdpi/ic_menu.png</file>
+        <file>theme/AppTheme.qml</file>
+        <file>theme/qmldir</file>
+        <file>res/drawable-hdpi/ic_android_black_48dp.png</file>
+        <file>res/drawable-xxhdpi/ic_android_black_48dp.png</file>
+        <file>res/drawable-mdpi/ic_android_black_48dp.png</file>
+        <file>res/drawable-xhdpi/ic_android_black_48dp.png</file>
+        <file>res/drawable-xxxhdpi/ic_android_black_48dp.png</file>
+        <file>res/drawable-hdpi/ic_done_black_24dp.png</file>
+        <file>res/drawable-mdpi/ic_done_black_24dp.png</file>
+        <file>res/drawable-xhdpi/ic_done_black_24dp.png</file>
+        <file>res/drawable-xxhdpi/ic_done_black_24dp.png</file>
+        <file>res/drawable-xxxhdpi/ic_done_black_24dp.png</file>
+        <file>res/drawable-xxhdpi/ic_keyboard_backspace.png</file>
+        <file>res/drawable-xxhdpi/ic_arrow_back.png</file>
+        <file>res/drawable-xxhdpi/ic_image.png</file>
+        <file>res/drawable-xxhdpi/ic_camera.png</file>
+        <file>suporte/Suporte.qml</file>
+        <file>theme/ActionBarBackground.qml</file>
+    </qresource>
+</RCC>

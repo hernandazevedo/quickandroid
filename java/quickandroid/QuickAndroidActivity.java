@@ -1,14 +1,6 @@
 package quickandroid;
-import org.qtproject.qt5.android.QtNative;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
-
-import com.pax.dal.IDAL;
-import com.pax.neptunelite.api.DALProxyClient;
-
-import quickandroid.pax.TestLog;
 
 /** An alternative Activity class for Qt applicaiton.
 
@@ -17,17 +9,6 @@ import quickandroid.pax.TestLog;
 
 public class QuickAndroidActivity extends org.qtproject.qt5.android.bindings.QtActivity {
 
-    public static IDAL idal = null;
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        try {
-            idal = DALProxyClient.getInstance().getDal(getApplicationContext());
-        } catch (Exception e) {
-            Log.e(TestLog.LOG_TAG,e.getMessage());
-        }
-    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

@@ -3,7 +3,10 @@ TEMPLATE = app
 QT += qml quick
 
 SOURCES += main.cpp \
-    automator.cpp
+    automator.cpp \
+    qobjectlistmodel.cpp \
+    suportehandler.cpp \
+    supportdata.cpp
 
 RESOURCES += qml.qrc
 
@@ -19,6 +22,23 @@ include(../../quickandroid.pri)
 
 # Default rules for deployment.
 include(deployment.pri)
+
+
+
+#Bibliotecas do mamba
+
+
+
+#INCLUDEPATH += $$PWD/include
+#INCLUDEPATH += $$PWD/../../mambalibs/am/include
+#INCLUDEPATH += $$PWD/../../mambalibs/am/lib
+#INCLUDEPATH += $$PWD/../../mambalibs/br/inc
+#INCLUDEPATH += $$PWD/../../mambalibs/mal/inc
+#INCLUDEPATH += $$PWD/../../mambalibs/launcher/Mamba_Web/include
+#INCLUDEPATH += $$PWD/../../mambalibs/sdk/linux/PAX/S920/sysroot/usr/include/freetype2
+#INCLUDEPATH += $$PWD/../../mambalibs/sdk/linux/PAX/S920/sysroot/usr/lib/
+
+#FIM bibliotecas do mamba
 
 DISTFILES += \
     android-sources/AndroidManifest.xml \
@@ -39,4 +59,8 @@ DISTFILES += \
 
 HEADERS += \
     automator.h \
-    ../../README.md
+    ../../README.md \
+    qobjectlistmodel.h \
+    qquicklist.h \
+    suportehandler.h \
+    supportdata.h

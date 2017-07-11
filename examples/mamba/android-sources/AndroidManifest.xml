@@ -1,19 +1,12 @@
-<?xml version='1.0' encoding='utf-8'?>
-<manifest package="quickandroid.example" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0" android:versionCode="1" android:installLocation="auto">
-    <application android:hardwareAccelerated="true"
-        android:name="org.qtproject.qt5.android.bindings.QtApplication"
-        android:label="Quick Android Example" android:icon="@drawable/icon">
-        <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|locale|fontScale|keyboard|keyboardHidden|navigation"
-                  android:name="quickandroid.example.MyMainActivity"
-                  android:label="Quick Android Example"
-                  android:theme="@style/AppTheme"
-                  android:screenOrientation="unspecified"
-                  android:launchMode="singleTop">
+<?xml version="1.0"?>
+<manifest package="br.com.buy4.mamba" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0" android:versionCode="1" android:installLocation="auto">
+    <application android:hardwareAccelerated="true" android:name="org.qtproject.qt5.android.bindings.QtApplication" android:label="Mamba" android:icon="@drawable/icon">
+        <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|locale|fontScale|keyboard|keyboardHidden|navigation" android:name="quickandroid.example.MyMainActivity" android:label="Mamba" android:theme="@style/AppTheme" android:screenOrientation="unspecified" android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-            <meta-data android:name="android.app.lib_name" android:value="quickandroidexample"/>
+            <meta-data android:name="android.app.lib_name" android:value="mamba"/>
             <meta-data android:name="android.app.qt_sources_resource_id" android:resource="@array/qt_sources"/>
             <meta-data android:name="android.app.repository" android:value="default"/>
             <meta-data android:name="android.app.qt_libs_resource_id" android:resource="@array/qt_libs"/>
