@@ -1,19 +1,19 @@
-#include "suportehandler.h"
+#include "supporthandler.h"
 #include <QObject>
 
 
-SuporteHandler::SuporteHandler(QObject *parent) :
+SupportHandler::SupportHandler(QObject *parent) :
     QObject(parent)
 {
 //    listSupportData();
 }
 
-QObjectListModel *SuporteHandler::model()
+QObjectListModel *SupportHandler::model()
 {
     return m_personlist.getModel();
 }
 
-void SuporteHandler::listSupportData()
+void SupportHandler::listSupportData()
 {
     qDebug() << "Listing data";
     m_personlist.clear();

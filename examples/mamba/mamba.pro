@@ -3,10 +3,10 @@ TEMPLATE = app
 QT += qml quick
 
 SOURCES += main.cpp \
-    automator.cpp \
-    qobjectlistmodel.cpp \
-    suportehandler.cpp \
-    supportdata.cpp
+    src/automator.cpp \
+    src/qobjectlistmodel.cpp \
+    src/support/supportdata.cpp \
+    src/support/supporthandler.cpp
 
 RESOURCES += qml.qrc
 
@@ -29,7 +29,8 @@ include(deployment.pri)
 
 
 
-#INCLUDEPATH += $$PWD/include
+INCLUDEPATH += $$PWD/include
+INCLUDEPATH += $$PWD/include/support
 #INCLUDEPATH += $$PWD/../../mambalibs/am/include
 #INCLUDEPATH += $$PWD/../../mambalibs/am/lib
 #INCLUDEPATH += $$PWD/../../mambalibs/br/inc
@@ -58,9 +59,10 @@ DISTFILES += \
     android-sources/src/quickandroid/pax/TestLog.java
 
 HEADERS += \
-    automator.h \
+    include/automator.h \
     ../../README.md \
-    qobjectlistmodel.h \
-    qquicklist.h \
-    suportehandler.h \
-    supportdata.h
+    include/qobjectlistmodel.h \
+    include/qquicklist.h \
+    include/support/supportdata.h \
+    include/support/supporthandler.h
+

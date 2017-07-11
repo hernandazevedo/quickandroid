@@ -24,25 +24,31 @@ Page {
         }
     }
 
-    VisualDataModel {
-        id: visualDataModel
-        delegate: ListItem {
-            title: name
-            subtitle: value
-            onClicked: {
-                //present(Qt.resolvedUrl(modelData.demo));
-            }
-        }
-
-        model: suporteHandler.model;
-    }
-
     ListView {
         anchors.fill: parent
         model: suporteHandler.model
         delegate: delegate1
 
     }
+
+    Component.onCompleted:{
+        suporteHandler.listSupportData()
+    }
+
+
+    /*
+        VisualDataModel {
+            id: visualDataModel
+            delegate: ListItem {
+                title: name
+                subtitle: value
+                onClicked: {
+                    //present(Qt.resolvedUrl(modelData.demo));
+                }
+            }
+
+            model: suporteHandler.model;
+        }
 
     Flow {
         id: row2
@@ -54,10 +60,6 @@ Page {
             onClicked: suporteHandler.listSupportData()
         }
     }
-
-    Component.onCompleted:{
-        suporteHandler.listSupportData()
-    }
-
+    */
 
 }

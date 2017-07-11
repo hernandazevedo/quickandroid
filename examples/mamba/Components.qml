@@ -10,7 +10,7 @@ Page {
     property var pages: [
         {
             name: "Suporte",
-            demo: "suporte/Suporte.qml",
+            demo: "support/Support.qml",
             description: "Suporte"
         }
     ];

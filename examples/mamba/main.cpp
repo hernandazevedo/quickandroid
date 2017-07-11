@@ -6,8 +6,8 @@
 #include "quickandroid.h"
 #include "qadrawableprovider.h"
 #include "qasystemdispatcher.h"
+#include "supporthandler.h"
 #include "automator.h"
-#include "suportehandler.h"
 
 #ifdef Q_OS_ANDROID
 #include <QtAndroidExtras/QAndroidJniObject>
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
     engine.addImportPath("qrc:///"); // Add QuickAndroid into the import path
     /* End of QuickAndroid Initialization */
 
-    SuporteHandler * suporteHandler = new SuporteHandler();
+    SupportHandler * suporteHandler = new SupportHandler();
 
 //    qmlRegisterType<SuporteHandler>("TestComponents", 1, 0, "SuporteHandler");
     qmlRegisterType<QObjectListModel>("TestComponents", 1, 0, "QObjectListModel");
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
     Automator* automator = new Automator();
     automator->start();
 
-    qDebug() << "Start QuickAndroid Example Program";
+    qDebug() << "Start Mamba Example Program";
 
     return app.exec();
 }

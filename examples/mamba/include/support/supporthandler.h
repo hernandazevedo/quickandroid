@@ -6,7 +6,7 @@
 
 
 
-class SuporteHandler: public QObject
+class SupportHandler: public QObject
 {
     Q_OBJECT
 
@@ -15,7 +15,7 @@ class SuporteHandler: public QObject
     //Q_PROPERTY(QQmlListProperty<SupportData> listProperty READ listProperty NOTIFY modelChanged)
 
 public:
-    explicit SuporteHandler(QObject *parent = NULL);
+    explicit SupportHandler(QObject *parent = NULL);
 
     QObjectListModel * model();
     Q_INVOKABLE void listSupportData();

@@ -20,7 +20,7 @@
         <file>res/drawable-xxhdpi/ic_arrow_back.png</file>
         <file>res/drawable-xxhdpi/ic_image.png</file>
         <file>res/drawable-xxhdpi/ic_camera.png</file>
-        <file>suporte/Suporte.qml</file>
+        <file>support/Support.qml</file>
         <file>theme/ActionBarBackground.qml</file>
     </qresource>
 </RCC>
